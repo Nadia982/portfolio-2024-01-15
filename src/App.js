@@ -1,11 +1,16 @@
-import './App.css';
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-     <h1>Hello World</h1>
-    </div>
-  );
+import { useEffect } from "react";
+import Aos from "aos";
+
+import "./App.css";
+
+function App(){
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
+  return <h1 className="text-indigo-600 text-2-xl font-[500]">Hello World</h1>;
 }
 
 export default App;
