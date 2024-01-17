@@ -44,10 +44,50 @@ const Hero = () => {
             <p
                 data-aos="fade-left"
                 data-aos-duration="1500"
-                className="flex gap-2 text-headingColor mt-12 font-[500] text-[16px] leading-7 sm:pl-14 sm:pr-10"
-              ><span><i class="ri-apps-2-line"></i></span>I am a frontend web developer based near London, UK and have been building websites with React and JavaScript since 2022. I love creating sites and apps that solve real-world problems, and engage and delight users.</p>
+                className="flex gap-2 text-headingColor mt-12 font-[500] text-[1rem] leading-7"
+              >I am a frontend web developer based near London, UK and have been building websites with React and JavaScript since 2022. I love creating sites and apps that solve real-world problems, and engage and delight users.</p>
+              <div className="flex items-center gap-5 mt-5">
+                <span className="text-smallTextColor text-[1rem] font-[500]">Let's connect:</span>
+                <span>
+                    <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="text-smallTextColor text-[3rem] font[-700]"><i class="ri-linkedin-box-fill"></i></a>
+                </span>
+                <span className="mb-1">
+                    <a aria-label="link to Natalie Gillam's GitHub profile" href="#linkedin" className="text-smallTextColor text-[3rem] font[-700]"><i class="ri-github-fill"></i></a>
+                </span>
+              </div>
           </div>
           {/* ========== hero left end ========== */}
+          {/* ========== hero right start ========== */}
+          <div className="md:basis-1/3 flex justify-between text-center mt-10 flex-wrap gap-1 md:mt-0 md:flex-col md:justify-end md:text-end">
+            <div className="mb-10">
+                <h2 className="text-headingColor font-[700] text-[2rem]">
+                    <CountUp start={0} end={12} duration={2} suffix="+"/> years
+                </h2>
+                <h4 className="text-headingColor font-[600] text-[1.2rem]">
+                working in the tech industry
+                </h4>
+            </div>
+
+            <div className="mb-10">
+                <h2 className="text-headingColor font-[700] text-[2rem]">
+                    <CountUp start={0} end={2} duration={2} suffix="+"/> years
+                </h2>
+                <h4 className="text-headingColor font-[600] text-[1.2rem]">
+                building sites with React and JavaScript
+                </h4>
+            </div>
+
+            <div className="mb-10">
+                <h2 className="text-headingColor font-[700] text-[2rem]">
+                    <CountUp start={0} end={3} duration={2} suffix="+"/> months
+                </h2>
+                <h4 className="text-headingColor font-[600] text-[1.2rem]">
+                teaching Computer Science
+                </h4>
+            </div>
+
+          </div>
+          {/* ========== hero right end ========== */}
         </div>
       </div>
     </section>
