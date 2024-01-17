@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import LondonImg from '../../assets/images/london-6104682_640.png';
 
 const Hero = () => {
   return (
@@ -8,13 +9,13 @@ const Hero = () => {
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* ========== hero left content ========== */}
           <div className="w-full md:basis-1/2">
-            <h5
+            {/* <h5
               data-aos="fade-right"
               data-aos-duration="1500"
               className="text-headingColor font-[600] text-[16px]"
             >
               Welcome
-            </h5>
+            </h5> */}
             <h1
               data-aos="fade-up"
               data-aos-duration="1500"
@@ -44,9 +45,9 @@ const Hero = () => {
             <p
                 data-aos="fade-left"
                 data-aos-duration="1500"
-                className="flex gap-2 text-headingColor mt-12 font-[500] text-[1rem] leading-7"
-              >I am a frontend web developer based near London, UK and have been building websites with React and JavaScript since 2022. I love creating sites and apps that solve real-world problems, and engage and delight users.</p>
-              <div className="flex items-center gap-5 mt-5">
+                className=" text-headingColor mt-8 font-[500] text-[1rem] leading-7"
+              >I am a frontend web developer based near <span className="font-[700]">London, UK</span> and have been building websites with React and JavaScript since 2022. I love creating sites and apps that solve real-world problems, and engage and delight users.</p>
+              <div className="flex items-center gap-5 mt-0">
                 <span className="text-smallTextColor text-[1rem] font-[500]">Let's connect:</span>
                 <span>
                     <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="text-smallTextColor text-[3rem] font[-700]"><i class="ri-linkedin-box-fill"></i></a>
@@ -54,7 +55,9 @@ const Hero = () => {
                 <span className="mb-1">
                     <a aria-label="link to Natalie Gillam's GitHub profile" href="#linkedin" className="text-smallTextColor text-[3rem] font[-700]"><i class="ri-github-fill"></i></a>
                 </span>
+                <img className="mb-10" src={LondonImg} alt="London skyline" width="150" />
               </div>
+              {/* <img className="mt-0" src={LondonImg} alt="London skyline" width="150" /> */}
           </div>
           {/* ========== hero left end ========== */}
           {/* ========== hero right start ========== */}
