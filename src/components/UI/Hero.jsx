@@ -52,10 +52,10 @@ const Hero = () => {
               <div className="flex h-20 items-center gap-4 mt-0">
                 <span className="text-smallTextColor text-[1rem] font-[500]">Feel free to send me a <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="font-[700]">LinkedIn connection request:</a></span>
                 <span>
-                    <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="text-smallTextColor text-[3rem] font[-700]"><i class="ri-linkedin-box-fill"></i></a>
+                    <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="text-headingTextColor text-[3rem] font[-700]"><i class="ri-linkedin-box-fill"></i></a>
                 </span>
                 <span className="mb-1">
-                    <a aria-label="link to Natalie Gillam's GitHub profile" href="#linkedin" className="text-smallTextColor text-[3rem] font[-700]"><i class="ri-github-fill"></i></a>
+                    <a aria-label="link to Natalie Gillam's GitHub profile" href="#linkedin" className="text-headingTextColor text-[3rem] font[-700]"><i class="ri-github-fill"></i></a>
                 </span>
                 <img className="mb-10" src={LondonImg} alt="London skyline" width="150" />
               </div>
