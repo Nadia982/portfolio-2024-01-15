@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer"
 import Hero from "./components/UI/Hero"
 import Projects from "./components/UI/Projects"
 import About from './components/UI/About'
-
+import Contact from './components/UI/Contact'
 
 function App(){
   useEffect(() => {
@@ -24,6 +24,7 @@ function App(){
       <Hero/>
       <Projects/>
       <About/>
+      <Contact/>
     </main>
     <Footer/>
     </>
