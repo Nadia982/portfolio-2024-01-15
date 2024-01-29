@@ -82,9 +82,9 @@ const Projects = () => {
               data-aos-duration="1000"
               className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]"
             >
-              <figure>
+              <figure className="flex items-center justify-center">
                 <img
-                  className="rounded-[8px]"
+                  className="rounded-[8px] h-64 object-cover"
                   src={project.imgUrl}
                   alt={project.alt}
                 />
