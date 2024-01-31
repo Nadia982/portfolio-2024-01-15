@@ -1,6 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import LondonImg from '../../assets/images/london-6104682_640.png';
+import Map from "../../assets/images/UK.png";
 
 const Hero = () => {
   return (
@@ -9,55 +10,46 @@ const Hero = () => {
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* ========== hero left content ========== */}
           <div className="w-full md:basis-1/2">
-            {/* <h5
-              data-aos="fade-right"
-              data-aos-duration="1500"
-              className="text-headingColor font-[600] text-[16px]"
-            >
-              Welcome
-            </h5> */}
             <h1
               data-aos="fade-up"
               data-aos-duration="1500"
               className="text-headingColor font-[700] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
-              I'm Natalie Gillam, a <br /> JavaScript Developer
+              I'm Natalie Gillam,<br />a JavaScript Developer<br />based near London, UK
             </h1>
-            <div
+            
+            {/* <div
               data-aos="fade-up"
               data-aos-duration="1800"
               data-aos-delay="200"
               className="flex items-center gap-6 mt-7"
-            >
-              <a href="#contact">
-                <button className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
-                  <i class="ri-mail-line"></i>Contact Me
-                </button>
-              </a>
-              <a
+            > */}
+
+              {/* <a
                 href="#projects"
                 className="text-smallTextColor font-[700] text-[16px] border-b border-solid border-smallTextColor"
               >
                 See projects
-              </a>
+              </a> */}
              
-            </div>
+            {/* </div> */}
             <p
                 data-aos="fade-left"
                 data-aos-duration="1500"
                 className=" text-headingColor mt-8 font-[500] text-[1rem] leading-7"
-              >I am a frontend web developer based near <span className="font-[700]">London, UK</span> and have been building websites with React and JavaScript since 2022. I love creating sites and apps that solve real-world problems, and engage and delight users.</p>
+              >I have been building websites with React and JavaScript since 2022. I love creating sites and apps that solve real-world problems, and engage and delight users.</p>
               
               <h3 className="text-smallTextColor text-[1.3rem] mt-8 mb-0 mr-0 font-[700]">Let's Connect!</h3>
               <div className="flex h-20 items-center gap-4 mt-0">
-                <span className="text-smallTextColor text-[1rem] font-[500]">Feel free to send me a <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="font-[700]">LinkedIn connection request:</a></span>
+                <span className="text-smallTextColor text-[1rem] font-[500]">Feel free to send me a <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="font-[700] underline underline-offset-2">LinkedIn connection request</a></span>
                 <span>
                     <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="text-headingTextColor text-[3rem] font[-700]"><i class="ri-linkedin-box-fill"></i></a>
                 </span>
                 <span className="mb-1">
                     <a aria-label="link to Natalie Gillam's GitHub profile" href="#linkedin" className="text-headingTextColor text-[3rem] font[-700]"><i class="ri-github-fill"></i></a>
                 </span>
-                <img className="mb-10" src={LondonImg} alt="London skyline" width="150" />
+                <img className="mb-6" src={LondonImg} alt="London skyline" width="120" />
+                <img className="mb-10" src={Map} alt="outline of the UK" width="50" />
               </div>
               {/* <img className="mt-0" src={LondonImg} alt="London skyline" width="150" /> */}
           </div>
