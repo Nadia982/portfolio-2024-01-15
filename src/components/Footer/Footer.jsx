@@ -9,7 +9,16 @@ const Footer = () => {
             <h2 className="text-[2rem] leading-10 text-center text-white font-[600] md:text-[2rem]">
               Get in touch
             </h2>
-            <p className="text-[1.2rem] leading-10 text-center text-white">The best way to get in touch is by sending me a <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="font-[700] underline underline-offset-2">message on LinkedIn</a></p>
+            <p className="text-[1.2rem] leading-10 text-center text-white">
+              The best way to get in touch is by sending me a{" "}
+              <a
+                aria-label="link to Natalie Gillam's LinkedIn profile"
+                href="#linkedin"
+                className="font-[700] underline underline-offset-2"
+              >
+                message on LinkedIn
+              </a>
+            </p>
             <div className="flex h-20 items-center justify-center gap-4 mt-0">
               <span>
                 <a
@@ -34,6 +43,30 @@ const Footer = () => {
                 </span> */}
             </div>
           </div>
+        </div>
+        <div className="pb-10">
+          <ul className="flex items-center justify-center gap-10 mt-2">
+            <li>
+              <a className="text-white font-[600]" href="#home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="text-white font-[600]" href="#projects">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a className="text-white font-[600]" href="#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a className="text-white font-[600]" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
