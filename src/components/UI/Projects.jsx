@@ -73,7 +73,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-4 flex-wrap mt-12">
+        <div className="flex justify-center items-center gap-4 flex-wrap mt-12">
           {projects?.slice(0, nextItems)?.map((project, index) => (
             <div
               key={index}
@@ -84,7 +84,7 @@ const Projects = () => {
             >
               <figure className="flex items-center justify-center">
                 <img
-                  className="rounded-[8px] h-64 object-cover border-2 border-gray-600"
+                  className="rounded-[8px] w-96 h-64 object-cover border-2 border-gray-600"
                   src={project.imgUrl}
                   alt={project.alt}
                 />
