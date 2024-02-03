@@ -57,7 +57,7 @@ const Hero = () => {
           {/* ========== hero right start ========== */}
           <div className="md:basis-1/3 flex justify-between text-center mt-10 flex-wrap gap-1 md:mt-0 md:flex-col md:justify-end md:text-end">
             <div className="mb-10">
-                <h2 className="text-headingColor font-[700] text-[2rem]">
+                <h2 className="text-headingColor font-[700] text-[2rem] md:text-right sm:text-left">
                     <CountUp start={0} end={12} duration={2} suffix="+"/> years
                 </h2>
                 <h4 className="text-headingColor font-[600] text-[1.2rem]">
@@ -66,7 +66,7 @@ const Hero = () => {
             </div>
 
             <div className="mb-10">
-                <h2 className="text-headingColor font-[700] text-[2rem]">
+                <h2 className="text-headingColor font-[700] text-[2rem] md:text-right sm:text-left">
                     <CountUp start={0} end={2} duration={2} suffix="+"/> years
                 </h2>
                 <h4 className="text-headingColor font-[600] text-[1.2rem]">
@@ -75,7 +75,7 @@ const Hero = () => {
             </div>
 
             <div className="mb-10">
-                <h2 className="text-headingColor font-[700] text-[2rem]">
+                <h2 className="text-headingColor font-[700] text-[2rem] md:text-right sm:text-left">
                     <CountUp start={0} end={3} duration={2} suffix="+"/> months
                 </h2>
                 <h4 className="text-headingColor font-[600] text-[1.2rem]">
