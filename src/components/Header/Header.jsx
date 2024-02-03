@@ -1,19 +1,48 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 
 const Header = () => {
+  const headerRef = useRef(null);
+
+  const stickyHeaderFunc = () => {
+    window.addEventListener('scroll', () => {
+     if(document.body.scrollTop> 0 || document.documentElement.scrollTop > 0) { 
+      headerRef.current.classList.add("sticky__header");
+    } else {
+      headerRef.current.classList.remove("sticky__header");
+    }})
+  }
+
+    useEffect(() => {
+      stickyHeaderFunc();
+
+      return window.removeEventListener("scroll", stickyHeaderFunc)
+    },[])
+
+
+  const handleClick = e => {
+    e.preventDefault();
+    const targetAttr = e.target.getAttribute("href"); 
+    let location = document.querySelector(targetAttr).offsetTop;
+
+    window.scrollTo({
+      top: location - 100, 
+      left: 0,
+    })
+  }
+
   return (
-    <header className="w-full h-[80px] leading-[80px] flex items-center">
+    <header ref={headerRef} className="w-full h-[80px] leading-[80px] flex items-center">
       <div className="container">
         <div className="flex items-center justify-between">
           {/* ========== logo start ========== */}
           <div className="flex items-center gap-[10px]">
-            <span className="w-[35px] h[-35px] bg-primaryColor text-white text-[18px] font-[500] rounded-full flex items-center justify-center">
+            <span className="w-[35px] h-[35px] bg-primaryColor text-white text-[18px] font-[500] rounded-full flex items-center justify-center">
               N
             </span>
             <div className="leading-[20px]">
               <h2 className="text-xl text-smallTextColor font-[700]">Natalie Gillam</h2>
               <p className="textsmallTextColor text-[14px] font-[500]">
-                JS Developer
+                JS Dev
               </p>
             </div>
           </div>
@@ -21,10 +50,10 @@ const Header = () => {
           {/* ========== menu start ========== */}
           <div className="menu">
             <ul className="flex items-center gap-10">
-              <li><a className="text-smallTextColor font-[600]" href="#home">Home</a></li>
-              <li><a className="text-smallTextColor font-[600]" href="#projects">Projects</a></li>
-              <li><a className="text-smallTextColor font-[600]" href="#about">About</a></li>
-              <li><a className="text-smallTextColor font-[600]" href="#contact">Contact</a></li>
+              <li><a onClick={handleClick} className="text-smallTextColor font-[600]" href="#hero">Home</a></li>
+              <li><a onClick={handleClick} className="text-smallTextColor font-[600]" href="#projects">Projects</a></li>
+              <li><a onClick={handleClick} className="text-smallTextColor font-[600]" href="#about">About</a></li>
+              <li><a onClick={handleClick} className="text-smallTextColor font-[600]" href="#contact">Contact</a></li>
             </ul>
           </div>
           {/* ========== menu end ========== */}

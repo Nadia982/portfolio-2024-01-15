@@ -1,6 +1,16 @@
 import React from "react";
 
 const Footer = () => {
+  const handleClick = e => {
+    e.preventDefault();
+    const targetAttr = e.target.getAttribute("href"); 
+    let location = document.querySelector(targetAttr).offsetTop;
+
+    window.scrollTo({
+      top: location - 100, 
+      left: 0,
+    })
+  }
   return (
     <footer className="bg-[#12141e] pt-12">
       <div className="container">
@@ -9,7 +19,7 @@ const Footer = () => {
             <h2 className="text-[2rem] leading-10 text-center text-white font-[600] md:text-[2rem]">
               Get in touch
             </h2>
-            <p className="text-[1.2rem] leading-10 text-center text-white">
+            <p className="text-[1.2rem] mt-4 text-center text-white">
               The best way to get in touch is by sending me a{" "}
               <a
                 aria-label="link to Natalie Gillam's LinkedIn profile"
@@ -47,22 +57,22 @@ const Footer = () => {
         <div className="pb-10">
           <ul className="flex items-center justify-center gap-10 mt-2">
             <li>
-              <a className="text-white font-[600]" href="#home">
+              <a onClick={handleClick} className="text-white font-[600]" href="#home">
                 Home
               </a>
             </li>
             <li>
-              <a className="text-white font-[600]" href="#projects">
+              <a onClick={handleClick} className="text-white font-[600]" href="#projects">
                 Projects
               </a>
             </li>
             <li>
-              <a className="text-white font-[600]" href="#about">
+              <a onClick={handleClick} className="text-white font-[600]" href="#about">
                 About
               </a>
             </li>
             <li>
-              <a className="text-white font-[600]" href="#contact">
+              <a onClick={handleClick} className="text-white font-[600]" href="#contact">
                 Contact
               </a>
             </li>

@@ -77,14 +77,14 @@ const Projects = () => {
           {projects?.slice(0, nextItems)?.map((project, index) => (
             <div
               key={index}
-              data-aos="fade-zoom-in"
-              data-aos-delay="50"
-              data-aos-duration="1000"
+              // data-aos="fade-zoom-in"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
               className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]"
             >
               <figure className="flex items-center justify-center">
                 <img
-                  className="rounded-[8px] h-64 object-cover"
+                  className="rounded-[8px] h-64 object-cover border-2 border-gray-600"
                   src={project.imgUrl}
                   alt={project.alt}
                 />

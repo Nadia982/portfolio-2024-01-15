@@ -5,7 +5,7 @@ import Map from "../../assets/images/UK.png";
 
 const Hero = () => {
   return (
-    <section className="pt-0" id="about">
+    <section className="pt-0" id="hero">
       <div className="container pt-14">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* ========== hero left content ========== */}
@@ -39,7 +39,7 @@ const Hero = () => {
                 className=" text-headingColor mt-8 font-[500] text-[1rem] leading-7"
               >I have been building websites with React and JavaScript since 2022. I love creating sites and apps that solve real-world problems, and engage and delight users.</p>
               
-              <h3 className="text-smallTextColor text-[1.3rem] mt-8 mb-0 mr-0 font-[700]">Let's Connect!</h3>
+              <h3 className="text-smallTextColor text-[1.3rem] mt-8 mb-4 mr-0 font-[700]">Let's Connect!</h3>
               <div className="flex h-20 items-center gap-4 mt-0">
                 <span className="text-smallTextColor text-[1rem] font-[500]">Feel free to send me a <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="font-[700] underline underline-offset-2">LinkedIn connection request</a></span>
                 <span>
