@@ -4,7 +4,7 @@ import projects from "../../assets/data/portfolioData";
 const Modal = ({activeID, setShowModal}) => {
   const project = projects.find(project => project.id ==activeID);
   return (
-    <div className ="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40">
+    <div onClick={()=>setShowModal(false)} className ="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40">
       <div className = "mt-12 flex-column m-auto items-end justify-end border-gray-500 border-4 h-[81vh] w-11/12 md:max-w-[600px] md:w-full absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5">
         <div className ="w-1/2 m-auto border-4 border-gray-300 rounded-[8px]">
           <figure>
@@ -24,7 +24,7 @@ const Modal = ({activeID, setShowModal}) => {
               </span>))}
           </div>
           <a href={project.siteUrl}>
-            <button className="bg-primaryColor text-white py-2 px-4 my-4 rounded-[8px] font-[500] hover:bg-headingColor ease-in duration-300">Live Site</button>
+            <button className="bg-primaryColor text-white py-2 px-4 my-6 rounded-[8px] font-[500] hover:bg-headingColor ease-in duration-300">Live Site</button>
           </a>
         </div>
         <button onClick={()=>setShowModal(false)} className="w-[2.1rem] h-[2.1rem] bg-[white] absolute top-[1.7rem] right-[1.7rem] text-[3rem] flex items-center pb-1 justify-center rounded-[3px] leading-0 cursor-pointer">&times;</button>
