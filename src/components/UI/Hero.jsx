@@ -48,7 +48,7 @@ const Hero = () => {
                 <span className="mb-1">
                     <a aria-label="link to Natalie Gillam's GitHub profile" href="#linkedin" className="text-headingTextColor text-[3rem] font[-700]"><i class="ri-github-fill"></i></a>
                 </span>
-                <img className="mb-6" src={LondonImg} alt="London skyline" width="120" />
+                {/* <img className="mb-6" src={LondonImg} alt="London skyline" width="120" /> */}
                 <img className="mb-10" src={Map} alt="outline of the UK" width="50" />
               </div>
               {/* <img className="mt-0" src={LondonImg} alt="London skyline" width="150" /> */}
