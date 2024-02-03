@@ -39,7 +39,7 @@ const Hero = () => {
                 className=" text-headingColor mt-8 font-[500] text-[1rem] leading-7"
               >I have been building websites with React and JavaScript since 2022. I love creating sites and apps that solve real-world problems, and engage and delight users.</p>
               
-              <h3 className="text-smallTextColor text-[1.3rem] mt-8 mb-4 mr-0 font-[700]">Let's Connect!</h3>
+              <h3 className="text-smallTextColor text-[1.3rem] mt-8 md:mb-0 sm:mb-4 mr-0 font-[700]">Let's Connect!</h3>
               <div className="flex h-20 items-center gap-4 mt-0">
                 <span className="text-smallTextColor text-[1rem] font-[500]">Feel free to send me a <a aria-label="link to Natalie Gillam's LinkedIn profile" href="#linkedin" className="font-[700] underline underline-offset-2">LinkedIn connection request</a></span>
                 <span>
@@ -55,9 +55,10 @@ const Hero = () => {
           </div>
           {/* ========== hero left end ========== */}
           {/* ========== hero right start ========== */}
-          <div className="md:basis-1/3 flex justify-between text-center mt-10 flex-wrap gap-1 md:mt-0 md:flex-col md:justify-end md:text-end">
+          <div className="md:basis-1/3 flex justify-between lg:text-right mt-10 flex-wrap gap-1 md:mt-0 md:flex-col md:text-left sm:text-left">
+          {/* <div className="md:basis-1/3 flex justify-between text-center mt-10 flex-wrap gap-1 md:mt-0 md:flex-col md:justify-end md:text-end"> */}
             <div className="mb-10">
-                <h2 className="text-headingColor font-[700] text-[2rem] md:text-right sm:text-left">
+                <h2 className="text-headingColor font-[700] text-[2rem]">
                     <CountUp start={0} end={12} duration={2} suffix="+"/> years
                 </h2>
                 <h4 className="text-headingColor font-[600] text-[1.2rem]">
@@ -66,7 +67,7 @@ const Hero = () => {
             </div>
 
             <div className="mb-10">
-                <h2 className="text-headingColor font-[700] text-[2rem] md:text-right sm:text-left">
+                <h2 className="text-headingColor font-[700] text-[2rem]">
                     <CountUp start={0} end={2} duration={2} suffix="+"/> years
                 </h2>
                 <h4 className="text-headingColor font-[600] text-[1.2rem]">
@@ -75,7 +76,7 @@ const Hero = () => {
             </div>
 
             <div className="mb-10">
-                <h2 className="text-headingColor font-[700] text-[2rem] md:text-right sm:text-left">
+                <h2 className="text-headingColor font-[700] text-[2rem]">
                     <CountUp start={0} end={3} duration={2} suffix="+"/> months
                 </h2>
                 <h4 className="text-headingColor font-[600] text-[1.2rem]">
