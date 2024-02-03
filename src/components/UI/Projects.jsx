@@ -58,7 +58,7 @@ const Projects = () => {
             <button onClick={()=>setSelectTab("all")} className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[0.5rem]">
               All
             </button>
-
+ 
             <button onClick={()=>setSelectTab("javascript")} className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[0.5rem]">
               JavaScript
             </button>
